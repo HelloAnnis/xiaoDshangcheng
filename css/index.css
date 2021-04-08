@@ -1,0 +1,353 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+body,
+button,
+input
+{
+    font: 12px arial;
+}
+li
+{
+    list-style: none;
+}
+a {
+    color: #666;
+    text-decoration: none;
+
+}
+input,
+button{
+    border: none;
+    outline: none;
+}
+body {
+    background-color: #f8fafc;
+}
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+.clearfix{
+    *zoom: 1;
+}
+.clearfix::after
+{
+    content:"";
+    display: block;
+    height: 0;
+    clear: both;
+}
+/* 顶部栏 */
+.top-nav
+{
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    font-size: 12px;
+}
+.top-nav .login {
+
+    float: left;
+}
+.top-nav .login .h{
+    color: red;
+    margin-right: 6px;
+}
+.top-nav .nav-list
+{
+    float: right;
+}
+.top-nav .nav-list li
+{
+    display: inline-block;
+    margin-left: 10px;
+}
+/* 搜索框  */
+.serachWrap .w
+{
+    position: relative;
+
+}
+.logo {
+    position:absolute;
+    top: 33px;
+    left: 15px;
+    width: 150px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+.search-box
+{
+    padding: 40px 0 40px 300px;
+}
+.clearfix
+{
+    *zoom: 1;
+}
+.clearfix::after
+{
+    height: 0;
+    content: "";
+    clear: both;
+}
+.search-box .searchInput
+{
+    float: left;
+width: 530px;
+height: 40px;
+line-height: 40px;
+border: 1px solid #ddd;
+padding: 0 10px;
+font-size: 15px;
+}
+.search-box .search-btn
+{
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-color: red;
+    color: #fff;
+}
+.search-suggest
+{
+    display: none;
+    position: absolute;
+    top: 82px;
+    background-color: #fff;
+    width: 550px;
+    border: 1px solid #ddd;
+}
+.search-suggest ul li
+{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+/* 商品分类 */
+.menu
+{
+    padding-bottom: 30px;
+}
+.aside-nav{
+    float: left;
+    width: 200px;
+    height: 500px;
+    box-shadow: 2px 6px 9px rgba(0,0,0, .2);
+}
+.list-item .item-href{
+    display: block;
+    height: 50px;
+    margin: 0 20px;
+    line-height: 50px ;
+    color:#333;
+    border-bottom: 1px dotted #ddd;
+    box-sizing: border-box;
+
+}
+.list-item:last-child .item-href
+{
+    border: none;
+}
+.nav-list{
+    position: relative;
+}
+.list-item:hover,
+.list-item:hover .item-href{
+    color: white;
+    background-color: red;
+
+}
+
+/* 二级分类 */
+.nav-list .item-menu
+{
+    display: none;
+    position: absolute;
+    left: 200px;
+    width: 900px;
+    top: 0;
+    min-height: 500px;
+    background-color: #fff;
+    box-shadow: 2px 2px 9px rgba(0,0,0, .2);
+    z-index: 999;
+}
+.list-item:hover .item-menu{
+    display:block;
+}
+.subcate
+{
+    float: left;
+    width: 610px;
+    padding:30px 20px 20px 20px;
+}
+.subcate .subcate_item{
+    position: relative;
+    padding-left: 80px;
+    
+}
+.subcate .subcate_item .subcate_title
+{
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 70px;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 700;
+
+}
+.subcate_title .subcate_title_allow{
+    margin-left: 5px;
+}
+.subcate .subcate_con
+{
+    padding: 5px 0;
+}
+
+.subcate .subcate_con .subcate_con_lk
+{
+float: left;
+height: 16px;
+line-height: 16px;
+border-left: 1px solid #ddd;
+padding: 0 10px;
+margin: 3px 0;
+}
+.subcate .subcate_link:hover,
+.subcate .subcate_con .subcate_con_lk:hover
+{
+    color: red;
+}
+/* 二级分类猜你喜欢 */
+.guessLike
+{
+    float: left;
+    width: 250px;
+    padding-top: 30px;
+}
+.guessLike h3
+{
+    color: #666;
+    text-align: center ;
+}
+.like-item
+{
+    float: left;
+}
+.like-item .like_lk{
+    display: block;
+    width: 100px;
+    padding: 10px 0 0 15px;
+}
+.like-item .like_lk img{
+    width: 100px;
+    height:100px;
+}
+.like_lk:hover img
+{
+opacity: 0.8;
+filter: alpha(opacity=80);
+}
+.like_item .like_lk p{
+    height:24px;
+    line-height: 24px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+
+}
+.like_lk:hover p{
+    color: red;
+}
+/* 轮播图 */
+.banner-wrap
+{
+    float: left;
+    margin-left: 20px;
+}
+.banner-wrap  .banner
+{
+    position: relative;
+    width: 970px;
+    height: 500px;
+}
+.banner-wrap .banner ul
+{
+    width: 100%;
+    display: flex;
+}
+.banner-wrap .banner ul li
+{
+    transition: opacity .3s;
+}
+.banner-wrap .banner ul li a
+{
+    display: block;
+    width: 970px;
+    height: 500px;
+
+}
+.banner-wrap .banner ul li a img
+{
+   
+    width: 100%;
+    height: 100%;
+}
+.prev{
+    left: 30px;
+}
+.next{
+    right: 30px;
+}
+.swiper-arrow{
+    position: absolute;
+    top: 50%;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0, .4);
+    transform: translateY(-50%);
+    /* margin-top: -18px; */
+    cursor: pointer;
+}
+.indicators
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 14px;
+    background-color: rgba(255, 255,255, .3);
+    border-radius: 10px;
+
+}
+.indicators .indicator{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.indicators .on{
+    background-color: #ff5000;
+}
